@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - DVFL</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <object
-      data="portfolio.pdf"
-      type="application/pdf"
-      style="width: 100%; height: 100vh"
-    ></object>
+    <header>
+      <h1>Dossier de partenariats - DeVinci Fablab</h1>
+    </header>
+    
+    <div class="content-container">
+      <div class="pdf-container">
+        <object
+          data="portfolio.pdf"
+          type="application/pdf"
+          width="100%"
+          height="100%">
+        </object>
+      </div>
+      
+      <div class="error-container">
+        <h2>Le portfolio n'a pas pu être affiché</h2>
+        <p>Il semble que votre navigateur ne puisse pas afficher le document PDF directement.</p>
+        <a href="portfolio.pdf" class="download-button" download>Télécharger le Portfolio</a>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2025 DeVinci Fablab - Tous droits réservés</p>
+    </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>
